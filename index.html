@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
+    <script type="module" src="controller.js"></script>
+    <title>Forkify// search your recipies here</title>
+
+  </head>
+
+  <body style="background-color:  bisque;"
+  ><div style="width:100%;height:100%">
+    <div class="Container" style="width:100%;height:100%">
+        <header class="header">
+          <div class="appinfo">
+            <img src="img/forkify.png" class="forkifyimg" alt="forkimage" />
+            <div class="appname">FORKIFY</div>
+          </div>
+          <form class="search_input">
+            <input
+              type="text"
+              class="search_field"
+              placeholder="search 1000s of recipies"
+            />
+            <button class="search" type="submit" name="search">Search</button>
+          </form>
+          <button class="btn-bookmark" type="submit" name="bookmark">
+              Bookmarks
+            </button>
+            <div class="bookmarks">
+              <ul class="bookmarks_list">
+                <div class="bookmark_message">
+                  <div>
+                    <p>No Bookmarks yet Please book mark the recipe</p>
+                  </div>
+                </div>
+                <!-- <li class="bookmarks_item hidden">
+                  <a class="preview__link " href="#23456">
+                    <img src="img/pasta.jpg" class="preview_fig" alt="Test" />
+                    <div class="preview__data">
+                      <h4 class="preview__name">
+                        Pasta with Tomato Cream ...
+                      </h4>
+                      <h4 class="publisher">the pioneer women</h4>
+                    </div>
+                  </a>
+                </li> -->
+              </ul>
+            </div>
+          
+        </header>
+        <div class="searchresults">
+          <ul class="search_list">
+              <!-- <div class="search_message">
+                  <div>
+                    <p>Please initate the search to get results here</p>
+                  </div>
+                </div> -->
+              <!-- <li class="preview_item">
+                  <a class="preview__link preview__link--active" href="#23456">
+                      <img src="img/pasta2.jpg" alt="Test"  class="preview_fig"/>
+            
+                      <div class="preview__data">
+                          <h4 class="preview__title">Pasta with Tomato Cream ...</h4>
+                          <p class="preview__publisher">The Pioneer Woman</p>
+              
+                      </div>
+                  </a>
+              </li>
+              <li class="preview_item">
+                  <a class="preview__link preview__link--active" href="#23456">
+                      <img src="img/pasta2.jpg" alt="Test"  class="preview_fig"/>
+            
+                      <div class="preview__data">
+                          <h4 class="preview__title">Pasta with Tomato Cream ...</h4>
+                          <p class="preview__publisher">The Pioneer Woman</p>
+              
+                      </div>
+                  </a>
+              </li>
+              <li class="preview_item">
+                  <a class="preview__link preview__link--active" href="#23456">
+                      <img src="img/pasta2.jpg" alt="Test"  class="preview_fig"/>
+            
+                      <div class="preview__data">
+                          <h4 class="preview__title">Pasta with Tomato Cream ...</h4>
+                          <p class="preview__publisher">The Pioneer Woman</p>
+              
+                      </div>
+                  </a>
+              </li>
+              <li class="preview_item">
+                  <a class="preview__link preview__link--active" href="#23456">
+                      <img src="img/pasta2.jpg" alt="Test"  class="preview_fig"/>
+            
+                      <div class="preview__data">
+                          <h4 class="preview__title">Pasta with Tomato Cream ...</h4>
+                          <p class="preview__publisher">The Pioneer Woman</p>
+              
+                      </div>
+                  </a>
+              </li> -->
+          </ul>
+          <div class="pagination">
+              <!-- <button class="btn--inline pagination__btn--prev">
+                <span>Page </span>
+              </button>
+              <button class="btn--inline pagination__btn--next">
+                <span>next</span>
+              </button> -->
+            </div>
+      </div>
+      
+      <div class="recipe ">
+          <div class="message">
+              <div>
+                  <p> &#128522 Start by searching for a recipe or an ingredient. Have fun!</p>
+              </div>
+  
+            </div>
+    
+            <!-- <div class="error hidden">
+                <div>
+                  <p>No recipes found for your query. Please try again!</p>
+                </div>
+                
+              </div> -->
+               <!-- <figure class="recipe__fig">
+                  <img src="img/pasta.jpg" alt="Tomato" class="recipe__img" />
+                  <h1 class="recipe__title">
+                    <span>Pasta with tomato cream sauce</span>
+                  </h1>
+                </figure>
+            <div class="recipe__details">
+              <div class="recipe__info">
+              <div class="recipe_firstrow">
+                  <img src="img/icon clock.png" alt="clock" class="recipe__info-icon" />
+                  <div class="recipe-text">
+                      45 Minutes
+                  </div>
+                   <span class="recipe__info-data recipe__info-data--minutes">45</span>
+                  <span class="recipe__info-text">minutes</span> 
+              </div>
+              <div class="recipe_firstrow">
+                  <img src="img/userimage.png" alt="userimage" class="recipe__info-icon" />
+                  <div class="recipe-text">
+                     4 Servings
+                  </div>
+              </div>
+              <div class="recipe_firstrow">
+                  <img src="img/plus circle.png" alt="plus" class=" btn--tiny recipe__infoplus-icon" />  
+                  <img src="img/minuscircle.png" alt="minus" class=" btn--tiny recipe__infominus-icon" />   
+                  <img src="img/Bookmark (2).png" alt="bookmark" class="recipe__infobookmark-icon" />
+              </div>
+                 
+          </div>
+            <div class="recipe__ingredients">
+              <h2 class="heading--2">Recipe ingredients</h2>
+              <ul class="recipe__ingredient-list">
+                <li class="recipe__ingredient">
+                  <svg class="recipe__icon">
+                    <use href="img/icons.svg#icon-check"></use>
+                  </svg>
+                  <div class="recipe__quantity">1000</div>
+                  <div class="recipe__description">
+                    <span class="recipe__unit">g</span>
+                    pasta
+                  </div>
+                </li>
+    
+                <li class="recipe__ingredient">
+                  <svg class="recipe__icon">
+                    <use href="img/icons.svg#icon-check"></use>
+                  </svg>
+                  <div class="recipe__quantity">0.5</div>
+                  <div class="recipe__description">
+                    <span class="recipe__unit">cup</span>
+                    ricotta cheese
+                  </div>
+                </li>
+              </ul>
+            </div>
+    
+            <div class="recipe__directions">
+              <h2 class="heading--2">How to cook it</h2>
+              <p class="recipe__directions-text">
+                This recipe was carefully designed and tested by
+                <span class="recipe__publisher">The Pioneer Woman</span>. Please check out
+                directions at their website.
+                <a
+                class="btn--small recipe__btn"
+                href="http://thepioneerwoman.com/cooking/pasta-with-tomato-cream-sauce/"
+                target="_blank"
+              >
+                Here
+              </a>
+              </p>
+              
+            </div> -->
+             
+          </div>
+        </div>
+  </div>
+    
+      
+    </div>
+    
+       
+      
+    </div>
+  </body>
+</html>
